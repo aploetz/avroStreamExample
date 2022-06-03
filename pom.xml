@@ -4,6 +4,7 @@
   <artifactId>avrostreamexample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>avrostreamexample</name>
+  <packaging>jar</packaging>
   
   <properties>
      <pulsar.version>2.10.0</pulsar.version>

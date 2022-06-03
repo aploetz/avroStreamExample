@@ -5,6 +5,10 @@ public class Payment {
 	private String id;
 	private Double amount;
 	
+	public Payment() {
+		
+	}
+	
 	public Payment(String id, Double amount) {
 		this.id = id;
 		this.amount = amount;

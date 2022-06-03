@@ -33,7 +33,7 @@ public class AvroSchemaConsumerExample {
 
     private static final String TOPIC = "avro-payments";
 
-    @SuppressWarnings("InfiniteLoopStatement")
+    // @SuppressWarnings("InfiniteLoopStatement")
     public static void main(final String[] args) {
 
         final String pulsarServiceUrl = "pulsar://localhost:6650";
@@ -55,13 +55,14 @@ public class AvroSchemaConsumerExample {
                  .subscriptionName("test-payments")
                  .subscribe()) {
 
-                final int numMessages = 10;
+                // final int numMessages = 10;
 
                 while (true) {
                     Message<Payment> msg = consumer.receive();
 
                     final String key = msg.getKey();
-                    final Payment payment = msg.getValue();
+                    Payment payment = new Payment();
+                    payment = msg.getValue();
 
                     System.out.printf("key = %s, value = %s%n", key, payment);
                 }
