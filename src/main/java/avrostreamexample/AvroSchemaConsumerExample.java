@@ -57,6 +57,7 @@ public class AvroSchemaConsumerExample {
 
                 // final int numMessages = 10;
 
+            	System.out.println("Checking for messages on " + TOPIC);
                 while (true) {
                     Message<Payment> msg = consumer.receive();
 
