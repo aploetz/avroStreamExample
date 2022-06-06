@@ -8,7 +8,7 @@ Run the `AvroSchemaProducerExample.java` code from within an IDE, or manually pr
 Running the AvroSchemaConsumerExample from _outside_ an IDE requires the following steps:
 
 ```
-mvn clean install
+% mvn clean install
 ```
 
 This should compile the Java classes _and_ build the `avrostreamexample-0.0.1-SNAPSHOT-jar-with-dependencies.jar` file.
